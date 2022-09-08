@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My World</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+
+<head>
+
+    <title>Web Page</title>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <h1 id="success!">Sign Up to site!</h1>
+            <label for="name"><span style="color: red">*</span> Your Name :</label> <input type="text" id="name"
+                placeholder="write name" />
+        </div>
+        <br>
+        <div>
+            <label for="password1"><span style="color: red">*</span> Password:</label> <input type="password"
+                id="password1" placeholder="write password" required />
+        </div>
+        <br>
+        <div>
+            <label for="password2"><span style="color: red">*</span> Confirm Password:</label> <input type="password"
+                id="password2" placeholder="write password" />
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="password" /> <label><span style="color: red">*</span> I accept the license
+                conditions.<label>
+        </div>
+        <div id="account">
+            <h4>Specifify account type desired:</h4>
+            <input type="radio" name="count/"><label> Basic ($25)</label><br>
+            <input type="radio" name="count/"><label> Standart ($50)</label><br>
+            <input type="radio" name="count/"><label> Deluxe ($100)</label>
+        </div>
+        <br>
+         <label for="op">Select System </label>
+        <select>
+            <option disabled selected>Operating System</option>
+            <option>Windows_64_bit_ENG</option>
+            <option>Mac</option>
+            <option>Linux</option>
+        </select>
+
+        <br>
+        <br>
+        <input type="submit" value="Sign Up" onclick="sign()"> <input type="reset" value="Reset">
+
+
+        <form>
+
+            <Script>
+                var info = "successfull sign";
+                function sign() {
+
+                    var bb = document.getElementById("success!");
+                    bb.innerHTML = "succesfully signed";
+
+                }
+
+            </Script>
+</body>
+
 </html>
